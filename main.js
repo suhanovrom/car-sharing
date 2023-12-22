@@ -119,8 +119,9 @@ class website{
       let div = document.createElement("div");
       div.style.backgroundImage = el.link;
       let h3 = document.createElement("h3");
+      
       if(el.h3){
-        
+
         h3.textContent = el.h3;
         div.appendChild(h3);
         divparent.appendChild(div);
