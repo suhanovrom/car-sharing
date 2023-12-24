@@ -133,5 +133,38 @@ let data = [
         }
         ]
 
+    },{
+        name:"contact",
+        h2:"Contact us",
+        p:"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium",
+        wrapper:[{
+            icon:"./img/icon/mail.svg",
+            picture:"url(./img/email.jpg)",
+            h3:"email",
+            p:"hello@carsharing.com"
+        },{
+            icon:"./img/icon/pointer.svg",
+            picture:"url(./img/office.jpg)",
+            h3:"our office",
+            p:"450 peremoga, 8361 Boryspil Ukraine"
+        },{
+            icon:"./img/icon/phone.svg",
+            picture:"url(./img/phone.jpg)",
+            h3:"phone",
+            p:"+9 99 888 777 66 55"
+        }
+        ]
+    },{
+        name:"footer",
+        img:"./img/footer_logo.webp",
+        p:"Copyright 2023. All rights Reserved",
+        icons:[{
+            link:"./img/icon/facebook.svg"
+        },{
+            link:"./img/icon/twitter.svg"
+        },{
+            link:"./img/icon/instagram.svg"
+        }
+        ]
     }
 ]

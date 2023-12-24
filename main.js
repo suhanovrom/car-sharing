@@ -27,8 +27,66 @@ class website{
           this.icons_services(value);
           this.progress_wrapper(value);
           break;
+        case "contact":
+          this.title_contact(value);
+          this.wrapper_contact(value);
+          break;
+        case "footer":
+          this.title_footer(value)
+          this.wrapper_footer(value)
+          break;
       }
     });
+  }
+  wrapper_footer(value){
+    let divparent = document.querySelector(".wrapper-footer");
+    value.icons.forEach((el) =>{
+      let div = document.createElement("div");
+      let img = document.createElement("img");
+      img.setAttribute("src", el.link);
+      div.appendChild(img);
+      divparent.appendChild(div);
+    });
+  }
+  title_footer(value){
+    let divparent = document.querySelector(".footer");
+    let img = document.createElement("img");
+    img.setAttribute("src", value.img);
+    divparent.appendChild(img);
+    let p = document.createElement("p");
+    p.textContent = value.p;
+    divparent.appendChild(p);
+
+  }
+  wrapper_contact(value){
+    let divparent = document.querySelector(".wrapper-contact");
+    value.wrapper.forEach((el) =>{
+      let divwrap = document.createElement("div");
+      let divpic = document.createElement("div");
+      divpic.style.backgroundImage = el.picture;
+      let icon = document.createElement("img");
+      icon.setAttribute("src",el.icon);
+      divpic.appendChild(icon);
+      let divtitle = document.createElement("div");
+      let title = document.createElement("p");
+      title.textContent = el.h3;
+      divtitle.appendChild(title);
+      let p = document.createElement("p");
+      p.textContent = el.p;
+      divtitle.appendChild(p);
+      divwrap.appendChild(divpic);
+      divwrap.appendChild(divtitle);
+      divparent.appendChild(divwrap);
+    });
+  }
+  title_contact(value){
+    let divparent = document.querySelector(".title-contact");
+    let h2  = document.createElement("h2");
+    h2.textContent = value.h2;
+    let p = document.createElement("p");
+    p.textContent = value.p;
+    divparent.appendChild(h2);
+    divparent.appendChild(p);
   }
   progress_wrapper(value){
     let divparent = document.querySelector(".services-progress-wrapper");
@@ -78,7 +136,7 @@ class website{
     value.childNodes.forEach((el)=>{
       this.iconsServices_text(el,this.valueServices);
       el.addEventListener("click", ()=>{
-        if(window.getComputedStyle(el).backgroundColor == "rgb(141, 153, 174)"){
+        if(!el.classList.contains("focus")){
           value.childNodes.forEach((child) =>{child.classList.remove("focus")});
           el.classList.add("focus")
           this.iconsServices_text(el,this.valueServices);
