@@ -250,12 +250,13 @@ h1{
     max-width: 460px;
  }
  .featured-projects{
+    overflow: hidden;
     background-color: #202324;
     padding: 5.5rem 0;
     
  }
  .wrapper{
-    overflow: hidden;
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto; 
