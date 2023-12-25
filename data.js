@@ -3,13 +3,13 @@ let data = [
         name:"header",
         logourl: "./img/logo.webp",
         links:[{
-            href:"#",
+            href:"#hello",
             value: "hello"
         },{
-            href:"#",
+            href:"#details",
             value: "about"
         },{
-            href:"#",
+            href:"#services",
             value: "services"
         },{
             href:"#",
@@ -18,7 +18,7 @@ let data = [
             href:"#",
             value: "blog"
         },{
-            href:"#",
+            href:"#contact",
             value: "contact"
         }
         ],
