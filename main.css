@@ -5,6 +5,7 @@
     border: none;
 }
 body{
+    
     font-family: "Open Sans", sans-serif;
     background-color: grey;
 }
@@ -254,6 +255,7 @@ h1{
     
  }
  .wrapper{
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto; 
