@@ -258,7 +258,7 @@ h1{
     grid-template-rows: auto; 
  }
  .wrapper > div:not(:last-child):hover{
-    z-index: 100;
+    z-index: 99;
     transform: scale(1.05); /* Збільшення карточки при наведенні */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.3);
